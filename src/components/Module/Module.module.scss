@@ -1,0 +1,30 @@
+.line {
+  height: 2px;
+  width: 140px;
+  background-color: #FF3535;
+  margin-top: 54px;
+}
+
+.module {
+  display: flex;
+  min-width: 595px;
+}
+
+.module_number {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 29px;
+}
+
+.disciplines {
+  width: 373px;
+  margin: 25px 0 0 81px;
+  & > ul > li {
+    font-family: 'Styrene A Web', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    &::marker {
+      color: #FF3535;
+    }
+  }
+}

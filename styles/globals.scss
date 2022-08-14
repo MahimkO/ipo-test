@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Styrene A Web";
+  src: url("/fonts/StyreneAWeb-Regular.woff2") format("woff2"),
+    url("/fonts/StyreneAWeb-Regular.woff") format("woff");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Styrene A Web', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

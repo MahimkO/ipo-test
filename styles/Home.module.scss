@@ -1,0 +1,76 @@
+.container {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.study_programs {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Styrene A Web', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 71px;
+}
+
+.study_programs {
+  margin-top: 18px;
+}
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  margin-top: 147px;
+}
+
+.red_block, .black_block {
+  height: 293px;
+  width: 628px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  & h3 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.red_block {
+  background-color: #FF3535;
+  position: relative;
+}
+
+.red_block__content {
+  width: 496px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.red_block__rectangle {
+  height: 0;
+  width: 0;
+  border-bottom: 43px solid #CD1800;
+  border-right: 43px solid #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.black_block {
+  background-color: #2D2C2A;
+  margin-left: 30px;
+  & ul {
+    width: 515px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  & ul > li::marker {
+    color: red;
+  }
+}
