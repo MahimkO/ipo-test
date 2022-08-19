@@ -1,5 +1,5 @@
 .container {
-  width: 1256px;
+  max-width: 1256px;
   margin-top: 71px;
 }
 
@@ -12,4 +12,22 @@
   font-family: 'Styrene A Web', sans-serif;
   font-size: 26px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .title {
+    max-width: 345px;
+  }
+  .modules {
+    flex-direction: column;
+    justify-content: unset;
+    margin: 27px 0;
+    max-width: 345px;
+  }
 }

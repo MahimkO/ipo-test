@@ -1,5 +1,5 @@
 .container {
-  width: 1440px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +9,7 @@
 .study_programs {
   display: flex;
   flex-direction: column;
+  margin-top: 18px;
 }
 
 .title {
@@ -16,10 +17,6 @@
   font-size: 36px;
   font-weight: 700;
   margin-top: 71px;
-}
-
-.study_programs {
-  margin-top: 18px;
 }
 
 .blocks {
@@ -66,11 +63,59 @@
   background-color: #2D2C2A;
   margin-left: 30px;
   & ul {
-    width: 515px;
-    font-size: 20px;
+    max-width: 515px;
     font-weight: 300;
+    font-size: 20px;
+    & > li::marker {
+      color: red;
+    }
   }
-  & ul > li::marker {
-    color: red;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    align-items: unset;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 28px 15px 0 15px;
+  }
+  .study_programs {
+    margin-top: 34px;
+    align-items: center;
+  }
+  .blocks {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 44px;
+  }
+  .red_block, .black_block {
+    max-width: 345px;
+    & > h3 {
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin: 31px 0 0 0;
+    }
+  }
+  .red_block {
+    max-height: 231px;
+  }
+  .red_block__rectangle {
+    border-bottom: 26px solid #CD1800;
+    border-right: 26px solid #ffffff;
+  }
+  .red_block__content {
+    max-width: 300px;
+    margin-top: 25px;
+  }
+  .black_block {
+    margin: 23px 0 0 0;
+    & > ul {
+      max-width: 300px;
+      margin-left: 12px;
+      padding-left: 12px;
+    }
   }
 }

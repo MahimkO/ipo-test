@@ -31,8 +31,7 @@ const Home: NextPage = ({products} : InferGetStaticPropsType<typeof getStaticPro
           <div className={styles.red_block__rectangle}></div>
           <h3>Практические модули</h3>
           <div className={styles.red_block__content}>
-            <span>Работа над собственными проектами:</span><br/>
-            <span>практика групповых взаимодействий, кейс-методы, эссе</span>
+            <span>Работа над собственными проектами: практика групповых взаимодействий, кейс-методы, эссе</span>
           </div>
         </div>
         <div className={styles.black_block}>

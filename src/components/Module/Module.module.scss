@@ -1,3 +1,7 @@
+.container {
+  margin-top: 29px;
+}
+
 .line {
   height: 2px;
   width: 140px;
@@ -13,7 +17,6 @@
 .module_number {
   font-size: 32px;
   font-weight: 400;
-  margin-top: 29px;
 }
 
 .disciplines {
@@ -26,5 +29,37 @@
     &::marker {
       color: #FF3535;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin-top: 10px;
+  }
+  .line {
+    display: none;
+  }
+  .module {
+    flex-direction: column;
+    max-width: 345px;
+    margin-top: 0;
+  }
+  .module_number {
+    min-height: 51px;
+    max-width: 345px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    background-color: #F7F7F7;
+    & > svg {
+      margin-left: 24px;
+    }
+    & > span {
+      margin-left: 27px;
+    }
+  }
+  .disciplines {
+    margin: 0;
+    display: none;
   }
 }
